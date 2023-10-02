@@ -1,5 +1,12 @@
-* {
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -7,12 +14,17 @@ h1 {
   font-weight: bolder;
   font-size: 40px;
   background-color: lightsalmon ;
-  color: whitesmoke;
+  color: black;
+  padding: 15px;
+  width: 1920px;
 }
 
 .recipe {
   font-size: 22px;
-  color: black;
+  display: inline-block;
+  padding: 0 100px;
+  width: 640px;
+  text-align: center;
 }
 
 #mapo {
@@ -29,4 +41,13 @@ h1 {
 
 a {
   color: white;
+  padding: 10px 100px;
+  display: inline-block;
+  background-color: hsl(0, 0%, 100%, 25%);
+}
+
+ul {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 0;
 }
